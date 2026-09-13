@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GDG Nexus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-wrap">
+        <a class="brand" href="#dashboard">
+          <span class="brand-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8.5 12.5l2.7 2.7 4.7-6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </span>
+          <span class="brand-text">GDG Nexus</span>
+        </a>
+      </div>
+
+      <div class="user-card">
+        <div class="user-avatar">M</div>
+        <div>
+          <span class="user-label">Student Workspace</span>
+          <div class="user-name">Maya Rivera</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-link active" href="#dashboard">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M3 12l9-9 9 9-9 9-9-9z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>Student Dashboard</span>
+        </a>
+        <a class="nav-link" href="#events">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M4 8h16M6 4h12v16H6z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>Events</span>
+        </a>
+        <a class="nav-link" href="#guide">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </span>
+          <span>Beginner Guide</span>
+        </a>
+        <a class="nav-link" href="#assistant">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M4 12a8 8 0 0 1 12-6.5L20 12l-4 6.5a8 8 0 0 1-12-6.5z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>What Next? Assistant</span>
+        </a>
+        <a class="nav-link" href="#pulse">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M4 4h16v10H4zM8 16h8v4H8z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>Community Pulse</span>
+        </a>
+        <a class="nav-link" href="#lead">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M5 19V9m7 10V5m7 14v-7" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </span>
+          <span>Lead Dashboard</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="ai-note">
+          <span class="pulse-dot"></span>
+          <span>AI recommendations only</span>
+        </div>
+        <div class="gdg-note">
+          <span class="note-label">GDG Lead final decision</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="top-nav-bar">
+        <a class="top-brand" href="#dashboard">
+          <span class="top-brand-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8.5 12.5l2.7 2.7 4.7-6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </span>
+          <span class="top-brand-text">GDG Nexus</span>
+        </a>
+
+        <nav class="top-nav-links">
+          <a class="top-nav-link active" href="#dashboard">
+            <span>Overview</span>
+          </a>
+          <a class="top-nav-link" href="#events">
+            <span>Events</span>
+          </a>
+          <a class="top-nav-link" href="#guide">
+            <span>Guide</span>
+          </a>
+          <a class="top-nav-link" href="#assistant">
+            <span>Assistant</span>
+          </a>
+          <a class="top-nav-link" href="#pulse">
+            <span>Community Pulse</span>
+          </a>
+          <a class="top-nav-link" href="#lead">
+            <span>Lead Dashboard</span>
+          </a>
+        </nav>
+
+        <div class="top-nav-actions">
+          <span class="search-chip">
+            <svg viewBox="0 0 24 24" class="icon-svg small-icon-svg">
+              <path d="M11 4a7 7 0 0 0 0 14 7 7 0 0 0 0-14z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <button class="join-button">
+            <span>Join a Circle</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="topbar">
+        <div class="topbar-left">
+          <span class="crumb">Nexus Workspace / 2026</span>
+          <div class="topbar-heading-wrap">
+            <h1>Learning Dashboard</h1>
+            <span class="product-story">From student needs to community action.</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <button class="icon-button">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M12 3a9 9 0 0 0 0 18 9 9 0 0 0 0-18z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 8h.01M12 11l4 4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </button>
+          <button class="primary-button small-button">
+            <span class="button-plus">+</span>
+            <span>New Idea</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="dashboard-section page-section" id="dashboard">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Student Dashboard</span>
+            <h2>Welcome back, Maya</h2>
+          </div>
+          <div class="section-actions">
+            <span class="status-chip">
+              <span class="chip-dot"></span>
+              Learning Path Active
+            </span>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="dashboard-card welcome-card">
+            <div class="welcome-content">
+              <span class="section-kicker">Welcome</span>
+              <h2>You're building your tech path.</h2>
+              <p class="intro-text">Start with the technologies that feel new and useful. You are already exploring Cloud, AI, and Web Development.</p>
+
+              <div class="interest-cloud">
+                <span class="interest-label">Selected interests</span>
+                <div class="tag-list">
+                  <span class="tag cloud-tag">Cloud</span>
+                  <span class="tag ai-tag">AI</span>
+                  <span class="tag web-tag">Web Development</span>
+                  <span class="tag firebase-tag">Firebase</span>
+                </div>
+              </div>
+
+              <div class="recommended-next">
+                <div class="recommended-header">
+                  <span class="mini-label">Recommended next step</span>
+                  <span class="impact-score">
+                    <span class="score-number">72%</span>
+                    <span class="score-text">fit</span>
+                  </span>
+                </div>
+                <h3>Beginner Cloud Foundations Lab</h3>
+                <p class="recommended-text">Understand cloud concepts, deploy a first static website, and connect services with Firebase.</p>
+                <div class="recommended-actions">
+                  <a class="link-button" href="#events">See event</a>
+                  <a class="secondary-button" href="#guide">Beginner guide</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="dashboard-card events-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="mini-label">Upcoming events</span>
+                <h3>Your GDG Calendar</h3>
+              </div>
+              <a class="icon-chip" href="#events">All</a>
+            </div>
+            <div class="events-list">
+              <div class="event-item">
+                <div class="event-date-box">
+                  <span class="event-date">Sep 18</span>
+                  <span class="event-day">Fri</span>
+                </div>
+                <div class="event-details">
+                  <span class="event-topic cloud-topic">Cloud</span>
+                  <span class="event-title">Cloud Foundations Lab</span>
+                  <span class="event-meta">6:00 PM · Online</span>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event-date-box">
+                  <span class="event-date">Sep 24</span>
+                  <span class="event-day">Thu</span>
+                </div>
+                <div class="event-details">
+                  <span class="event-topic ai-topic">AI</span>
+                  <span class="event-title">AI for Beginners</span>
+                  <span class="event-meta">4:30 PM · Campus Hub</span>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event-date-box">
+                  <span class="event-date">Oct 02</span>
+                  <span class="event-day">Fri</span>
+                </div>
+                <div class="event-details">
+                  <span class="event-topic web-topic">Web</span>
+                  <span class="event-title">Build With Firebase</span>
+                  <span class="event-meta">5:00 PM · Developer Lab</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-actions">
+              <span class="mini-label">Quick actions</span>
+              <div class="quick-action-list">
+                <button class="quick-button">
+                  <span class="quick-icon">↗</span>
+                  <span>Register</span>
+                </button>
+                <button class="quick-button">
+                  <span class="quick-icon">✦</span>
+                  <span>Find mentor</span>
+                </button>
+                <button class="quick-button">
+                  <span class="quick-icon">☁</span>
+                  <span>Cloud path</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="events-section page-section" id="events">
+        <div class="section-header compact-header">
+          <div>
+            <span class="section-kicker">Events</span>
+            <h2>Explore GDG Events</h2>
+          </div>
+          <div class="section-actions">
+            <button class="secondary-button small-button">Filter</button>
+          </div>
+        </div>
+
+        <div class="events-grid">
+          <article class="event-card">
+            <div class="event-card-head">
+              <span class="event-card-tag cloud-tag">Cloud</span>
+              <span class="beginner-badge">Beginner-friendly</span>
+            </div>
+            <div class="event-card-body">
+              <h3>Cloud Foundations Lab</h3>
+              <div class="event-meta-line">
+                <span class="meta-icon">📅</span>
+                <span class="meta-date">Sep 18, 2026 · 6:00 PM</span>
+              </div>
+              <p class="event-card-text">Learn cloud basics, understand services, and deploy your first simple project.</p>
+              <div class="event-card-footer">
+                <span class="event-level">Level: Beginner</span>
+                <button class="register-button">Register</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-card-head">
+              <span class="event-card-tag ai-tag">Artificial Intelligence</span>
+              <span class="beginner-badge">Beginner-friendly</span>
+            </div>
+            <div class="event-card-body">
+              <h3>AI for Beginners</h3>
+              <div class="event-meta-line">
+                <span class="meta-icon">📅</span>
+                <span class="meta-date">Sep 24, 2026 · 4:30 PM</span>
+              </div>
+              <p class="event-card-text">Understand how AI works and explore ethical, useful beginner projects.</p>
+              <div class="event-card-footer">
+                <span class="event-level">Level: Beginner</span>
+                <button class="register-button">Register</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-card-head">
+              <span class="event-card-tag web-tag">Web Development</span>
+              <span class="beginner-badge">Beginner-friendly</span>
+            </div>
+            <div class="event-card-body">
+              <h3>Build With Firebase</h3>
+              <div class="event-meta-line">
+                <span class="meta-icon">📅</span>
+                <span class="meta-date">Oct 02, 2026 · 5:00 PM</span>
+              </div>
+              <p class="event-card-text">Create a fast frontend project and connect it to a simple Firebase database.</p>
+              <div class="event-card-footer">
+                <span class="event-level">Level: Beginner</span>
+                <button class="register-button">Register</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-card-head">
+              <span class="event-card-tag data-tag">Data Science</span>
+              <span class="beginner-badge">Beginner-friendly</span>
+            </div>
+            <div class="event-card-body">
+              <h3>Data Stories Workshop</h3>
+              <div class="event-meta-line">
+                <span class="meta-icon">📅</span>
+                <span class="meta-date">Oct 10, 2026 · 2:00 PM</span>
+              </div>
+              <p class="event-card-text">Use data to ask questions, visualize simple insights, and understand trends.</p>
+              <div class="event-card-footer">
+                <span class="event-level">Level: Beginner</span>
+                <button class="register-button">Register</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section page-section" id="guide">
+        <div class="section-header compact-header">
+          <div>
+            <span class="section-kicker">Beginner Tech Guide</span>
+            <h2>Choose your first technology track</h2>
+          </div>
+          <div class="section-actions">
+            <button class="secondary-button small-button">All tracks</button>
+          </div>
+        </div>
+
+        <div class="guide-grid">
+          <article class="guide-card">
+            <div class="guide-card-head">
+              <span class="guide-icon ai-icon">✦</span>
+              <span class="guide-title">Artificial Intelligence</span>
+            </div>
+            <div class="guide-content">
+              <p class="guide-summary"><strong>What it is:</strong> Tools that can learn patterns and help solve problems.</p>
+              <p class="guide-summary"><strong>Why it matters:</strong> AI is shaping products, research, and workplace workflows.</p>
+              <p class="guide-summary"><strong>What you can do:</strong> Try prompt exercises, learn responsible AI, and use AI tools for study.</p>
+              <p class="guide-summary"><strong>First step:</strong> Explore a beginner AI activity and compare outputs.</p>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <div class="guide-card-head">
+              <span class="guide-icon cloud-icon">☁</span>
+              <span class="guide-title">Cloud</span>
+            </div>
+            <div class="guide-content">
+              <p class="guide-summary"><strong>What it is:</strong> Cloud computing gives teams flexible access to services and storage.</p>
+              <p class="guide-summary"><strong>Why it matters:</strong> Cloud powers websites, apps, data pipelines, and software services.</p>
+              <p class="guide-summary"><strong>What you can do:</strong> Deploy a project and understand storage, APIs, and serverless ideas.</p>
+              <p class="guide-summary"><strong>First step:</strong> Try a basic cloud deployment and learn the core terminology.</p>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <div class="guide-card-head">
+              <span class="guide-icon web-icon">⌘</span>
+              <span class="guide-title">Web Development</span>
+            </div>
+            <div class="guide-content">
+              <p class="guide-summary"><strong>What it is:</strong> Web development builds websites and web apps that people use online.</p>
+              <p class="guide-summary"><strong>Why it matters:</strong> It helps you turn ideas into accessible digital experiences.</p>
+              <p class="guide-summary"><strong>What you can do:</strong> Build static pages, forms, landing pages, and portfolio projects.</p>
+              <p class="guide-summary"><strong>First step:</strong> Create a personal homepage or event page.</p>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <div class="guide-card-head">
+              <span class="guide-icon data-icon">Σ</span>
+              <span class="guide-title">Data Science</span>
+            </div>
+            <div class="guide-content">
+              <p class="guide-summary"><strong>What it is:</strong> Data science turns information into patterns and decisions.</p>
+              <p class="guide-summary"><strong>Why it matters:</strong> It helps teams understand performance, user behavior, and trends.</p>
+              <p class="guide-summary"><strong>What you can do:</strong> Explore spreadsheets, charts, and simple datasets.</p>
+              <p class="guide-summary"><strong>First step:</strong> Analyze a dataset and create a simple chart.</p>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <div class="guide-card-head">
+              <span class="guide-icon firebase-icon">✎</span>
+              <span class="guide-title">Firebase</span>
+            </div>
+            <div class="guide-content">
+              <p class="guide-summary"><strong>What it is:</strong> Firebase is a platform for app development services and quick launch tools.</p>
+              <p class="guide-summary"><strong>Why it matters:</strong> It helps teams build apps faster with authentication, storage, and database services.</p>
+              <p class="guide-summary"><strong>What you can do:</strong> Create a project, add a database, and connect a form.</p>
+              <p class="guide-summary"><strong>First step:</strong> Create a Firebase project and connect a static page.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="assistant-section page-section" id="assistant">
+        <div class="section-header compact-header">
+          <div>
+            <span class="section-kicker">AI "What Next?" Assistant</span>
+            <h2>Find your next learning direction</h2>
+          </div>
+          <div class="section-actions">
+            <span class="demo-chip">Demo AI response</span>
+          </div>
+        </div>
+
+        <div class="assistant-grid">
+          <article class="assistant-form-card">
+            <form class="assistant-form" id="assistantForm">
+              <div class="form-row">
+                <label class="form-label" for="techInterest">Technology interest</label>
+                <select id="techInterest" class="form-control">
+                  <option>Artificial Intelligence</option>
+                  <option>Cloud</option>
+                  <option>Web Development</option>
+                  <option>Data Science</option>
+                  <option>Firebase</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="currentLevel">Current level</label>
+                <select id="currentLevel" class="form-control">
+                  <option>Beginner</option>
+                  <option>Interested beginner</option>
+                  <option>Exploring basics</option>
+                  <option>Intermediate</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="goal">Goal</label>
+                <select id="goal" class="form-control">
+                  <option>Learn the fundamentals</option>
+                  <option>Build a project</option>
+                  <option>Find teammates</option>
+                  <option>Attend events</option>
+                </select>
+              </div>
+
+              <button class="primary-button form-button" type="button" id="getRecommendation" disabled>
+                Get recommendation
+              </button>
+            </form>
+          </article>
+
+          <article class="assistant-output">
+            <div class="assistant-output-head">
+              <span class="mini-label">Recommended path</span>
+              <span class="ai-brand">AI Demo</span>
+            </div>
+            <div class="recommendation-result">
+              <div class="recommendation-heading">
+                <span class="result-category" id="resultCategory">Cloud</span>
+                <h3 id="recommendationTitle">Start with Cloud basics</h3>
+              </div>
+
+              <div class="recommendation-list">
+                <div class="recommendation-row">
+                  <span class="recommendation-label">What to learn next</span>
+                  <span class="recommendation-value" id="learnNext">Cloud concepts, storage, deployment</span>
+                </div>
+                <div class="recommendation-row">
+                  <span class="recommendation-label">Beginner project idea</span>
+                  <span class="recommendation-value" id="projectIdea">Deploy a static site with Firebase hosting</span>
+                </div>
+                <div class="recommendation-row">
+                  <span class="recommendation-label">Relevant GDG event</span>
+                  <span class="recommendation-value" id="relevantEvent">Cloud Foundations Lab</span>
+                </div>
+              </div>
+
+              <div class="ai-badge-row">
+                <span class="small-badge">AI provides recommendations</span>
+                <span class="small-badge light">GDG Lead decides</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="pulse-section page-section" id="pulse">
+        <div class="section-header compact-header">
+          <div>
+            <span class="section-kicker">Community Pulse</span>
+            <h2>What students are exploring</h2>
+          </div>
+          <div class="section-actions">
+            <button class="secondary-button small-button">Share your interest</button>
+          </div>
+        </div>
+
+        <div class="pulse-grid">
+          <article class="pulse-form-card">
+            <div class="panel-heading">
+              <div>
+                <span class="mini-label">Add a pulse</span>
+                <h3>Student interest form</h3>
+              </div>
+            </div>
+
+            <form class="pulse-form" id="communityForm">
+              <div class="form-row">
+                <label class="form-label" for="studentInterest">Technology interested in</label>
+                <input class="form-control" type="text" id="studentInterest" placeholder="e.g. Cloud" required />
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="studentGoal">What they want to do</label>
+                <select class="form-control" id="studentGoal" required>
+                  <option>Learn</option>
+                  <option>Build</option>
+                  <option>Find teammates</option>
+                  <option>Attend events</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="challenge">What's stopping them?</label>
+                <textarea class="form-control" id="challenge" rows="4" placeholder="I want to start a project but I need help..." required></textarea>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="suggestion">Optional idea or suggestion</label>
+                <textarea class="form-control" id="suggestion" rows="3" placeholder="I would like a hands-on workshop..."></textarea>
+              </div>
+
+              <button type="button" class="primary-button form-button" id="submitPulse" disabled>
+                Submit response
+              </button>
+              <div id="pulseStatus" class="pulse-submit-status" role="status" aria-live="polite">Response submitted successfully!</div>
+            </form>
+          </article>
+
+          <article class="insights-card">
+            <div class="panel-heading">
+              <div>
+                <span class="mini-label">Community insights</span>
+                <h3>Student responses</h3>
+              </div>
+              <span class="icon-chip small-icon">Live</span>
+            </div>
+            <div class="insights-list" id="insightsList">
+              <div class="insight-item">
+                <span class="insight-tech">Cloud</span>
+                <span class="insight-text">Wants to learn and build a first deployment.</span>
+              </div>
+              <div class="insight-item">
+                <span class="insight-tech">Firebase</span>
+                <span class="insight-text">Needs a beginner-friendly intro to authentication.</span>
+              </div>
+              <div class="insight-item">
+                <span class="insight-tech">AI</span>
+                <span class="insight-text">Interested in using AI for project planning.</span>
+              </div>
+              <div class="insight-item">
+                <span class="insight-tech">Web Development</span>
+                <span class="insight-text">Needs help finding teammates for a portfolio project.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lead-section page-section" id="lead">
+        <div class="section-header compact-header">
+          <div>
+            <span class="section-kicker">Lead Dashboard</span>
+            <h2>Community overview</h2>
+          </div>
+          <div class="section-actions">
+            <span class="demo-chip">Organizer view</span>
+          </div>
+        </div>
+
+        <div class="lead-stat-grid">
+          <article class="stat-card">
+            <span class="stat-tag">Students</span>
+            <span class="stat-number" id="studentCount">128</span>
+            <span class="stat-trend positive" id="studentTrend">+14 this month</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-tag">Popular technologies</span>
+            <span class="stat-number" id="popularTechnology">Cloud</span>
+            <span class="stat-trend positive" id="popularTechnologyTrend">+26 interest signals</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-tag">Top challenge</span>
+            <span class="stat-number" id="topChallenge">Fundamentals</span>
+            <span class="stat-trend warning" id="topChallengeTrend">+18 requests</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-tag">Event feedback</span>
+            <span class="stat-number" id="eventFeedback">89%</span>
+            <span class="stat-trend positive" id="eventFeedbackTrend">positive</span>
+          </article>
+        </div>
+
+        <div class="lead-grid">
+          <article class="lead-insight-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="mini-label">AI Community Insight</span>
+                <h3>Recommended activity</h3>
+              </div>
+              <span class="ai-badge">AI Demo</span>
+            </div>
+            <div class="ai-insight-summary">
+              <p class="ai-insight-text" id="aiInsightText">Many beginner students are interested in Cloud but need a stronger understanding of fundamentals and practical projects.</p>
+              <div class="suggested-activity">
+                <span class="suggested-label">Suggested Activity</span>
+                <h4 id="suggestedActivityTitle">Beginner Cloud Hands-on Workshop</h4>
+              </div>
+              <div class="ai-final-note">
+                <span class="note-icon">⚠</span>
+                <span>AI provides recommendations. The GDG Lead makes the final decision.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="lead-insight-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="mini-label">Community suggestions</span>
+                <h3>Ideas from students</h3>
+              </div>
+            </div>
+            <div class="suggestion-list" id="suggestionList">
+              <div class="suggestion-item">
+                <span class="suggestion-title">Cloud beginner workshop</span>
+                <span class="suggestion-meta">12 responses</span>
+              </div>
+              <div class="suggestion-item">
+                <span class="suggestion-title">AI project clinic</span>
+                <span class="suggestion-meta">8 responses</span>
+              </div>
+              <div class="suggestion-item">
+                <span class="suggestion-title">Firebase starter session</span>
+                <span class="suggestion-meta">7 responses</span>
+              </div>
+              <div class="suggestion-item">
+                <span class="suggestion-title">Peer study circles</span>
+                <span class="suggestion-meta">10 responses</span>
+              </div>
+            </div>
+
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
