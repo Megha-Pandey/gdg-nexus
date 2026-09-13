@@ -1,3 +1,4 @@
+Live Demo: https://gdg-nexus-818b0.web.app
 # GDG Nexus
 
 GDG Nexus is a student-focused web platform designed to help beginners discover Google Developer Group (GDG) events, explore technology topics, understand what to learn next, and share community interests.
